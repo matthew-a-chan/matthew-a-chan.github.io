@@ -1,1 +1,1 @@
-## This site is currently down for redesign. Please check back later to see the new changes!
+## This site is down for remodeling at the moment.
