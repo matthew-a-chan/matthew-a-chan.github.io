@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="../favicon.png" rel="shortcut icon" />
+    <title> Matthew Chan </title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="box_swipe.css">
+    <script src="box_swipe.js"></script>
+</head>
+
+<body>
+    <!-- SECTION: HEADER -->
+    <div class="n-header">
+    </div>
+    <div class="n-title">
+        <h1> MATTHEW CHAN </h1>
+    </div>
+    <!-- SECTION: AUTHORS -->
+    <div class="n-byline">
+        <div class="byline">
+            <a href="../about/about.html">About</a>
+            <a href="../research/research.html">Research</a>
+            <a href="../resume/resume.html" target="_blank">Resume</a>
+            <a href="../photography/photography.html">Photography</a>
+        </div>
+    </div>
+    <!-- SECTION: MAIN BODY -->
+    <div class="n-article">
+        <p>
+        <h3> EG3D: Efficient Geometry-aware 3D Generative Adversarial Networks</h3>
+        </p>
+        <div class="image-text">
+            <div class="img-comp-container image-text--image">
+                <div class="img-comp-img">
+                    <video controls="" loop="" controls="false" class="slider-video slider-video-0">
+                        <source src="media/sliders/A_compressed.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                    <video controls="" loop="" controls="false" class="slider-video slider-video-0">
+                        <source src="media/sliders/A_shape_compressed.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+            <div>
+                <p> I've recently published EG3D, a generative pipeline for near-photo-realistic 3d-aware scene synthesis.</p>
+                <p> To the left is a teaser of our results. Click the image to play <img src="media/graphics/playpause-01.svg" class="play-pause"> / pause <img
+                    src="media/graphics/playpause-02.svg" class="play-pause"> Drag the separator to see the
+                underlying geometry. Click <a href="javascript:resetComparisons();"><u>here</u></a> to reset.</p>
+                <p> More at the official project page, hosted <a href="https://matthew-a-chan.github.io/EG3D"
+                        target="_blank"><i><u>here</u></i></a>. </p>
+            </div>
+        </div>
+        <script>
+            initComparisons();
+            linkVideos(0);
+        </script>
+    </div>
+</body>
+
+</html>

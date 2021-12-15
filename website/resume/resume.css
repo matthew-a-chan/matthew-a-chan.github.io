@@ -1,0 +1,330 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+:root {
+    --blue: #2080d0;
+    --lightgrey: #888888;
+    --darkgrey: #666666;
+    --nearblack: #333333;
+}
+
+/* div:hover {
+    border-width: 1px;
+    border-color: #000000;
+    border-style: solid;
+} */
+
+.pagecontainer {
+    width: 8.5in;
+    height: 11in;
+    padding-left: .35in;
+    padding-right: .35in;
+    clear: both;
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    font-family: Arcon;
+}
+
+@font-face {
+    font-family: Arcon;
+    src: url(../Arcon-Regular.otf);
+}
+
+.header {
+    width: 100%;
+    height: 12%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.name {
+    padding-top: 15px;
+    font-size: 30pt;
+}
+
+.personaltitle {
+    font-size: 10pt;
+    color: var(--blue);
+}
+
+.headerinfo {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 10pt;
+}
+
+.date {
+    width: 130px;
+    background-image: url(calendar.svg);
+    background-repeat: no-repeat;
+    text-indent: 20px;
+}
+
+.location {
+    background-image: url(pin.svg);
+    background-repeat: no-repeat;
+    text-indent: 20px;
+}
+
+.link {
+    background-image: url(link.svg);
+    background-repeat: no-repeat;
+    text-indent: 20px;
+}
+
+.phone {
+    background-image: url(phone.svg);
+    background-repeat: no-repeat;
+    text-indent: 20px;
+}
+
+.email {
+    background-image: url(at.svg);
+    background-repeat: no-repeat;
+    text-indent: 20px;
+}
+
+.main {
+    width: 100%;
+    height: 88%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.columnbig {
+    width: 53%;
+}
+
+.columnsmall {
+    width: 43%;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.sectionTitle {
+    margin-top: 6px;
+    font-size: 18pt;
+    text-transform: uppercase;
+}
+
+.subsection {
+    margin-bottom: 7px;
+}
+
+.subsectionTitle {
+    font-size: 15pt;
+    color: var(--blue);
+}
+
+.subsectionDescription {
+    font-size: 11pt;
+    line-height: 1.1;
+    color: var(--darkgrey);
+}
+
+.subsectionInfo {
+    padding-top: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    font-size: 10pt;
+    color: var(--nearblack);
+}
+
+.subsectionPoint {
+    font-size: 11.5pt;
+    background-image: url(bullet.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    /* text-indent: 20px; */
+    padding-left: 20px;
+}
+
+.blackbar {
+    width: 100%;
+    height: 0%;
+    border-bottom-width: 3px;
+    border-style: solid;
+    border-color: #000000;
+}
+
+.greybar {
+    width: 100%;
+    height: 0%;
+    border-bottom-width: 2px;
+    border-style: dashed;
+    border-color: var(--darkgrey);
+}
+
+.skillbox {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.skill {
+    /* padding to get underlines in right place */
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 1px;
+    margin-bottom: 3px;
+    margin-right: 10px;
+    /* asymmetrical margin to ensure proper left-alignment in the box*/
+    border-bottom-width: 2px;
+    border-style: solid;
+    border-color: var(--nearblack);
+    color: var(--nearblack);
+}
+
+.degreeBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.degreeInfo {
+    width: 65%;
+}
+
+.gpaDivider {
+    width: 0%;
+    height: 50px;
+    margin-top: 18px;
+    margin-left: 4px;
+    margin-right: 24px;
+    border-left-width: 2px;
+    border-style: solid;
+    border-color: #cccccc;
+}
+
+.gpaBox {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--lightgrey);
+    font-size: 16px;
+}
+
+.gpaRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.gpa {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.highlightBox {}
+
+.highlightTitle {
+    font-size: 16pt;
+}
+
+
+/* .highlightInfo {
+    font-size: 11pt;
+    color: var(--blue);
+} */

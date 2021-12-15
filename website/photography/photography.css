@@ -1,0 +1,16 @@
+.columns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 98%;
+    margin: 1%;
+}
